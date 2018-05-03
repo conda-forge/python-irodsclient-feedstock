@@ -16,12 +16,15 @@ client API implemented in python.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/python-irodsclient-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/python-irodsclient-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/python-irodsclient-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/python-irodsclient-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-irodsclient/badges/version.svg)](https://anaconda.org/conda-forge/python-irodsclient)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-irodsclient/badges/downloads.svg)](https://anaconda.org/conda-forge/python-irodsclient)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-python--irodsclient-green.svg)](https://anaconda.org/conda-forge/python-irodsclient) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/python-irodsclient.svg)](https://anaconda.org/conda-forge/python-irodsclient) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-irodsclient.svg)](https://anaconda.org/conda-forge/python-irodsclient) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-irodsclient.svg)](https://anaconda.org/conda-forge/python-irodsclient) |
 
 Installing python-irodsclient
 =============================
