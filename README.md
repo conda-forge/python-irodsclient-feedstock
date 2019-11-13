@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About python-irodsclient
 ========================
 
@@ -20,8 +16,15 @@ client API implemented in python.
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/python-irodsclient-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/python-irodsclient-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5719&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-irodsclient-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
