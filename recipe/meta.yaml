@@ -1,6 +1,6 @@
 {% set name = "python-irodsclient" %}
-{% set version = "0.8.1" %}
-{% set sha256 = "6e73d49970b263c988917af681780a2e795a51a59379d278cc8c30fb071f2685" %}
+{% set version = "0.8.2" %}
+{% set sha256 = "e77c345bea028c748047656f35f576210528b1332087b5f0a7e2ddd179301447" %}
 
 package:
   name: {{ name|lower }}
@@ -35,6 +35,7 @@ test:
 about:
   home: https://github.com/irods/python-irodsclient
   license: BSD-3-Clause
+  license_file: LICENSE.txt
   summary: 'A python API for iRODS'
   description: |
     iRODS is an open-source distributed data management system. This is a
