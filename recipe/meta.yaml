@@ -1,29 +1,28 @@
 {% set name = "python-irodsclient" %}
-{% set version = "0.8.2" %}
-{% set sha256 = "e77c345bea028c748047656f35f576210528b1332087b5f0a7e2ddd179301447" %}
+{% set version = "0.8.6" %}
+
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-irodsclient-{{ version }}.tar.gz
+  sha256: 9a9ea40fdfc92902d9b79eb85f2eb89e7848d21500e1f3ee8246563a121f07c0
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    - python
-    - setuptools
+  host:
+    - pip
+    - python =2.7|>=3.6
   run:
-    - python
-    - six >=1.10.0
     - prettytable >=0.7.2
+    - python =2.7|>=3.6
+    - six >=1.10.0
     - xmlrunner >=1.7.7
 
 test:
@@ -31,12 +30,16 @@ test:
     - irods
     - irods.message
     - irods.manager
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/irods/python-irodsclient
   license: BSD-3-Clause
   license_file: LICENSE.txt
-  summary: 'A python API for iRODS'
+  summary: A python API for iRODS
   description: |
     iRODS is an open-source distributed data management system. This is a
     client API implemented in python.
@@ -45,4 +48,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - chrisburr
     - stolpeo
