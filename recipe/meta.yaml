@@ -1,5 +1,5 @@
 {% set name = "python-irodsclient" %}
-{% set version = "0.8.6" %}
+{% set version = "0.9.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-irodsclient-{{ version }}.tar.gz
-  sha256: 9a9ea40fdfc92902d9b79eb85f2eb89e7848d21500e1f3ee8246563a121f07c0
+  sha256: 57fa9454f2d3deca24ed463a4abee8f29b68f65b0068e8351276a059b687cdaf
 
 build:
   number: 0
