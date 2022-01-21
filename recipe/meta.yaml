@@ -1,5 +1,5 @@
 {% set name = "python-irodsclient" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-irodsclient-{{ version }}.tar.gz
-  sha256: 95e5cb270f5a28a14afde5030684db17fb04678a07a36aeed09e5a365d96b1d5
+  sha256: d360e9030111d4fea5ee9ce760f66f5efe36b855594c5d3d36cf395d900320d3
 
 build:
   number: 0
@@ -20,15 +20,14 @@ requirements:
     - pip
     - python =2.7|>=3.6
   run:
+    - defusedxml
     - prettytable >=0.7.2
     - python =2.7|>=3.6
     - six >=1.10.0
-    - xmlrunner >=1.7.7
 
 test:
   imports:
     - irods
-    - irods.message
     - irods.manager
   commands:
     - pip check
