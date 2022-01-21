@@ -20,15 +20,14 @@ requirements:
     - pip
     - python =2.7|>=3.6
   run:
+    - defusedxml
     - prettytable >=0.7.2
     - python =2.7|>=3.6
     - six >=1.10.0
-    - xmlrunner >=1.7.7
 
 test:
   imports:
     - irods
-    - irods.message
     - irods.manager
   commands:
     - pip check
