@@ -1,11 +1,11 @@
-About python-irodsclient
-========================
+About python-irodsclient-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-irodsclient-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/irods/python-irodsclient
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-irodsclient-feedstock/blob/main/LICENSE.txt)
 
 Summary: A python API for iRODS
 
