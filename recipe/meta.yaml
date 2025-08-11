@@ -24,6 +24,7 @@ requirements:
     - prettytable >=0.7.2
     - python =2.7|>=3.6
     - six >=1.10.0
+    - setuptools
 
 test:
   imports:
