@@ -1,5 +1,5 @@
 {% set name = "python-irodsclient" %}
-{% set version = "2.1.0" %}
+{% set version = "3.1.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-irodsclient-{{ version }}.tar.gz
-  sha256: d1beddd377469a2bfce2ee019477c1b9af8d7597004187f6b357491d66e93da4
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: e5734de7ec0af6612a28b605215ab92cc0ded3c0a73803de595f0128e2cd609e
 
 build:
   number: 0
@@ -19,6 +19,7 @@ requirements:
   host:
     - pip
     - python =2.7|>=3.6
+    - setuptools
   run:
     - defusedxml
     - prettytable >=0.7.2
